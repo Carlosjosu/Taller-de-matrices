@@ -42,5 +42,15 @@ https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrice
 16.  [Suma de matrices y conversio a hexadecimal](
     https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/sumas%20de%20matrices%20%20y%20convertir%20en%20exadecimal%20la%20respuesta.c)
 
+15. [Potencia de matrices]()
 
+16. [Potencia de matrices]()
+
+17. [Potencia de matrices]()
+
+18. [Potencia de matrices]()
+
+19. [Potencia de matrices]()
+
+20. [Potencia de matrices]()
 
