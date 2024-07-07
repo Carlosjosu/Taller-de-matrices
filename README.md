@@ -38,7 +38,7 @@ https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrice
 12. [División de matrices](
     https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/Division%20de%20matrices.c)
 
-14. [Potencia de matrices]()
+14. [Potencia de matrices](https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/potencia%20de%20una%20matriz.c)
 
 16.  [Suma de matrices y conversio a hexadecimal](
     https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/sumas%20de%20matrices%20%20y%20convertir%20en%20exadecimal%20la%20respuesta.c)
