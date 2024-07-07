@@ -34,7 +34,7 @@ int main()
     {
         for (int j = 0; j < 3; j++)
         {
-            printf("Elemento [%d][%d]: ", i + 1, j + 1); // Imprimir elementos de la matriz
+            printf("Elemento [%d][%d]: ", i + 1, j + 1); // Escibre lo siguiente Elemento [0][0] y asi para ingresar cada elemento de la matriz
             scanf("%lf", &matriz[i][j]);
         }
     }
