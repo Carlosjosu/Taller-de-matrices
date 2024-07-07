@@ -63,14 +63,15 @@ int main()
     }
     int matriz_resta[num_filas1][num_columnas1];
     printf("La resta de las matrices es:\n"); // Imprimo la matriz en su totalidad
-    for (int i = 0; i < num_filas1; i++){
-        for (int j = 0; j < num_columnas1; j++){
+    for (int i = 0; i < num_filas1; i++)
+    {
+        for (int j = 0; j < num_columnas1; j++)
+        {
             matriz_resta[i][j] = matriz1[i][j] - matriz2[i][j];
             printf("|%d| ", matriz_resta[i][j]);
         }
         printf("\n");
     }
 
-    
     return 0;
 }
