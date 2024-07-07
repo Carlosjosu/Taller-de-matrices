@@ -51,7 +51,7 @@ int main()
     printf("Ingrese la matriz:\n"); // Pedimos que ingrese la matriz
     for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < 3; j++) // Con este for imprimimos los elementos si cumple la condicion
+        for (int j = 0; j < 3; j++) // Con este for imprimimos Elemento [0][0] y asi para ingresar cada elemento de la matriz
         {
             printf("Elemento [%d][%d]: ", i + 1, j + 1);
             scanf("%lf", &matriz[i][j]);
