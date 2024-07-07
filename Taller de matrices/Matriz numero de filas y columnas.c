@@ -19,7 +19,7 @@ int main()
 
         for (int j = 0; j < num_columnas; j++)
         {
-            printf("Elemento [%d][%d]: ", i, j); // Imprimo los dichos elementos de la matriz
+            printf("Elemento [%d][%d]: ", i, j); // Escibre lo siguiente Elemento [0][0] y asi para ingresar cada elemento de la matriz
             scanf("%d", &matriz[i][j]);
         }
     }
