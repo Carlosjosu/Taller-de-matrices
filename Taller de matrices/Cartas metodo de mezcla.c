@@ -123,7 +123,7 @@ int main()
         intercambiarCartas(&baraja[i], &baraja[j]);
     }
 
-    // Se ordena la baraja con la llamda a la funcion
+    // Se ordena la baraja con la llamada a la funcion
     ordenarCartasMezcla(baraja, 0, 51);
 
     // Se imprime la baraja
