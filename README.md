@@ -45,7 +45,7 @@ https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrice
 
 15. [Cartas ejercicio en clase](https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/Cartas.c)
 
-16. [Cartas metodo de Burbuja]()
+16. [Cartas metodo de Burbuja](https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/Cartas%20metodo%20burbuja.c)
 
 17. [Cartas metodo de insercion]()
 
