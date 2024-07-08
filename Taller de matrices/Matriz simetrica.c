@@ -2,7 +2,7 @@
 
 void imprimir_Matriz(int matriz[3][3]) // Imprime la función 3 por 3
 {
-    printf("La matriz es:\n");
+    printf("La matriz es que ingreso:\n");
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -44,8 +44,8 @@ int main()
 {
     int matriz[3][3]; // Se declara la matriz
 
-    generar_matriz_simetrica(matriz);    // LLamada a la función
     printf("La matriz simetrica es:\n"); // Imprime un mensaje de que se va a imprimir la matriz simetrica
+    generar_matriz_simetrica(matriz);    // LLamada a la función
     imprimir_Matriz(matriz);
     return 0;
 }
