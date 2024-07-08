@@ -45,13 +45,12 @@ https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrice
 
 15. [Cartas por el metodo burbuja](https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/Cartas.c)
 
-16. [Potencia de matrices]()
+16. [Cartas metodo de Burbuja]()
 
-17. [Potencia de matrices]()
+17. [Cartas metodo de insercion]()
 
-18. [Potencia de matrices]()
+18. [Cartas metodo de mezcla]()
 
-19. [Potencia de matrices]()
+19. [Cartas ejercicio en clase]()
 
-20. [Potencia de matrices]()
 
