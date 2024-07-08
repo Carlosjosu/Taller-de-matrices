@@ -1,6 +1,6 @@
 # Taller de matrices
 
-### Desarrolla los siguientes ejercicios basados en matrices:
+### Desarrollar los siguientes ejercicios basados en matrices:
 
 1. [Imprimir los 4 elementos de la esquina](
 https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/valores%20de%20las%20esquinas.c)
