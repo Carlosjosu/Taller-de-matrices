@@ -24,7 +24,7 @@ int random_range(int min, int max)
 // Funcion que imprimira una carta
 void impresionCarta(struct Carta carta)
 {
-    printf("%c%c ", carta.valor, carta.palo);
+    printf("|%c%c| ", carta.valor, carta.palo);
 }
 
 // Esta funcion intercambia dos cartas
@@ -61,7 +61,7 @@ int main()
     struct Carta baraja[52]; // Arreglo que contiene todas las cartas de la baraja
 
     char palos[] = {CORAZONES, DIAMANTES, TREBOLES, PICAS};
-    char valores[] = {'2', '3', '4', '5', '6', '7', '8', '9', 'Y', 'J', 'Q', 'k', 'A'};
+    char valores[] = {'1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'J', 'Q', 'k'}; // A = 10, J = 11, Q = 12, K = 13
 
     int index = 0; // Contador que rastrea la posicion actual dentro del arreglo
     for (int p = 0; p < 4; p++)
@@ -84,7 +84,7 @@ int main()
         intercambiarCartas(&baraja[i], &baraja[j]);
     }
 
-    // Se ordena la baraja con el metodo de insercio haciendo un llamado ado a la funcion
+    // Se ordena la baraja con el metodo de insercion haciendo un llamado  a la funcion
     ordenarCartasInsercion(baraja, 52);
 
     // Se imprime la baraja ya ordenada
