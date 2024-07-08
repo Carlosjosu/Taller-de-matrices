@@ -43,7 +43,7 @@ https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrice
 16.  [Suma de matrices y conversio a hexadecimal](
     https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/sumas%20de%20matrices%20%20y%20convertir%20en%20exadecimal%20la%20respuesta.c)
 
-15. [Cartas por el metodo burbuja](https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/Cartas.c)
+15. [Cartas ejercicio en clase](https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrices/Cartas.c)
 
 16. [Cartas metodo de Burbuja]()
 
@@ -51,6 +51,6 @@ https://github.com/Carlosjosu/Taller-de-matrices/blob/main/Taller%20de%20matrice
 
 18. [Cartas metodo de mezcla]()
 
-19. [Cartas ejercicio en clase]()
+
 
 
