@@ -81,7 +81,11 @@ int main()
         {
             conversion_a_hexadecimal[i][j] = matriz_suma[i][j] & 0xFF; /* Convertimos a exadecimal el cual nos asegura el resultado es un byte*/
             printf("|%2X| ", conversion_a_hexadecimal[i][j]);
-            printf("%c", conversion_a_hexadecimal[i][j] >= 32 && conversion_a_hexadecimal[i][j] <= 126 ? conversion_a_hexadecimal[i][j] : ' '); /*Imprime el valor ASCII correspondiente al valor hexadecimal si esta dentro del rango.*/
+            if (conversion_a_hexadecimal[i][j] >= 0x30 && conversion_a_hexadecimal[i][j] <= 0x39)
+            {
+                printf("|%c| ", conversion_a_hexadecimal[i][j] + 0x30);
+
+            } /*Imprime el valor ASCII correspondiente al valor hexadecimal si esta dentro del rango.*/
         }
         printf("\n");
     }

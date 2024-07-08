@@ -2,7 +2,7 @@
 
 void imprimir_Matriz(int matriz[3][3]) // Imprime la función 3 por 3
 {
-    printf("La matriz es que ingreso:\n");
+    printf("La matriz que ingreso:\n");
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
