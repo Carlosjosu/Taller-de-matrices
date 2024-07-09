@@ -35,19 +35,31 @@ void intercambiarCartas(struct Carta *a, struct Carta *b)
     *b = temp;
 }
 
-// Funcion que ordena con el metodo de burbuja el valor de cada carta
+// Función que ordena las cartas primero por palo y luego por valor
 void ordenarCartasBurbuja(struct Carta cartas[], int n)
 {
-    for (int i = 0; i < n - 1; i++) // Recorre el atrreglo desdee el inicio hasta el final
-    {
+    for (int i = 0; i < n - 1; i++)
+    { // Recorre el arreglo desde el inicio hasta el final
         for (int j = 0; j < n - i - 1; j++)
-        // Se ejecuta desde el primer elemento hasta n-i-2
-        // Se reduce en cada iteración porque los elementos mayores ya están en su posición final
         {
-            // Se compara el valor de la carta en la posicion j con la carta en la posicion j+1
-            if (cartas[j].valor > cartas[j + 1].valor)
+            // Si el palo de la carta en la posición j es menor que el palo de la carta en la posición j+1
+            // Se intercambian las cartas
+            if (cartas[j].palo > cartas[j + 1].palo)
             {
-                // Si el valor de la carta en la posicion j es mayor que el valor de la carta en la posicion j+1
+                // Si los palos son iguales pero el valor es menor
+                // Se intercambian las cartas
+                intercambiarCartas(&cartas[j], &cartas[j + 1]);
+            }
+            else if (cartas[j].palo == cartas[j + 1].palo && cartas[j].valor < cartas[j + 1].valor)
+            // Si los palos son iguales y el valor es mayor que el valor de la carta en la posición j+1
+            // Se intercambian las cartas
+            {
+                intercambiarCartas(&cartas[j], &cartas[j + 1]);
+            }
+
+            {
+                // Si el palo de la carta en la posición j es mayor que el palo de la carta en la posición j+1
+                // O si los palos son iguales pero el valor es mayor
                 // Se intercambian las cartas
                 intercambiarCartas(&cartas[j], &cartas[j + 1]);
             }
@@ -74,7 +86,7 @@ int main()
     }
 
     // Se mezcla la baraja
-    for (int i = 0; i < 52; ++i)
+    for (int i = 0; i < 52; i++)
     {
         int j = random_range(i, 51);
         intercambiarCartas(&baraja[i], &baraja[j]);
@@ -84,11 +96,11 @@ int main()
     ordenarCartasBurbuja(baraja, 52);
 
     // Se imprime la baraja ya ordenada
-    for (int i = 0; i < 13; i++)
+    for (int i = 0; i < 4; i++)
     {
-        for (int j = 0; j < 4; j++)
+        for (int j = 0; j < 13; j++)
         {
-            impresionCarta(baraja[i + j * 13]);
+            impresionCarta(baraja[i * 13 + j]);
         }
         printf("\n");
     }

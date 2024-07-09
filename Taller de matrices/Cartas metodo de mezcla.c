@@ -54,29 +54,25 @@ void fusion(struct Carta cartas[], int izquierda, int medio, int derecha)
     int i = 0, j = 0, k = izquierda;
     while (i < n1 && j < n2)
     {
-        // Compara los valores las cartas de izquierda y derecha
-        if (izq[i].valor <= dere[j].valor)
+        if (izq[i].palo < dere[j].palo || (izq[i].palo == dere[j].palo && izq[i].valor <= dere[j].valor))
         {
-            // Si la carta de la izquierda es menor o igual a la carta de la derecha, la copia la carta de la izquierda al arreglo original
             cartas[k] = izq[i];
             i++;
         }
         else
         {
-            // Si la carta de la derecha es menor, la copia la carta de la derecha al arreglo original
             cartas[k] = dere[j];
             j++;
         }
         k++;
     }
-    // Copia los elementos restantes de izquierda si hay alguno
+    // Copia el resto de los valores del arreglo original al arreglo original
     while (i < n1)
     {
         cartas[k] = izq[i];
         i++;
         k++;
     }
-    // Copia los elementos restantes de derecha si hay alguno
     while (j < n2)
     {
         cartas[k] = dere[j];
@@ -127,13 +123,12 @@ int main()
     ordenarCartasMezcla(baraja, 0, 51);
 
     // Se imprime la baraja
-    for (int i = 0; i < 13; i++)
+    for (int i = 0; i < 4; i++)
     {
-        for (int j = 0; j < 4; j++)
+        for (int j = 0; j < 13; j++)
         {
-            impresionCarta(baraja[i + j * 13]);
+            impresionCarta(baraja[i * 13 + j]);
         }
         printf("\n");
     }
-    return 0;
 }

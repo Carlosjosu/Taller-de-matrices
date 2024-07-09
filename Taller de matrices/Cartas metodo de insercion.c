@@ -35,23 +35,21 @@ void intercambiarCartas(struct Carta *a, struct Carta *b)
     *b = temp;
 }
 
-// Funcion que ordena con el metodo de insercion el valor de cada carta
+// Función que ordena las cartas primero por palo y luego por valor
 void ordenarCartasInsercion(struct Carta cartas[], int n)
 {
-    for (int i = 0; i < n; i++) // Recorre las cartas de principio a fin
+    for (int i = 1; i < n; i++)
     {
-        // Guarda la carta actual
         struct Carta temp = cartas[i];
-        /*Se mueve la carta actual hacia la izquierda en el arreglo,
-        mientras que el valor de la carta en la posicion anterior es mayor que el actual.*/
         int j = i - 1;
-        while (j >= 0 && cartas[j].valor > temp.valor)
-        {
 
+        // Se mueve la carta hacia la izquierda hasta que se encuentra en su lugar correcto
+        while (j >= 0 && (cartas[j].palo > temp.palo || (cartas[j].palo == temp.palo && cartas[j].valor > temp.valor)))
+        {
             cartas[j + 1] = cartas[j];
             j--;
         }
-        // Inserta la carta en su posicion correcta
+        // Inserta la carta en su posicion
         cartas[j + 1] = temp;
     }
 }
@@ -88,12 +86,11 @@ int main()
     ordenarCartasInsercion(baraja, 52);
 
     // Se imprime la baraja ya ordenada
-    for (int i = 0; i < 13; i++)
+    for (int i = 0; i < 4; i++)
     {
-
-        for (int j = 0; j < 4; j++)
+        for (int j = 0; j < 13; j++)
         {
-            impresionCarta(baraja[i + j * 13]);
+            impresionCarta(baraja[i * 13 + j]);
         }
         printf("\n");
     }
