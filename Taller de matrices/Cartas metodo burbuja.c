@@ -38,29 +38,21 @@ void intercambiarCartas(struct Carta *a, struct Carta *b)
 // Función que ordena las cartas primero por palo y luego por valor
 void ordenarCartasBurbuja(struct Carta cartas[], int n)
 {
+    // Ordenamiento por burbuja para ordenar las cartas por palo y luego por valor
     for (int i = 0; i < n - 1; i++)
-    { // Recorre el arreglo desde el inicio hasta el final
+    {
+
         for (int j = 0; j < n - i - 1; j++)
         {
-            // Si el palo de la carta en la posición j es menor que el palo de la carta en la posición j+1
-            // Se intercambian las cartas
+            // Se intercambian las cartas si el palo es menor que el siguiente, o si el palo es igual y el valor es menor.
             if (cartas[j].palo > cartas[j + 1].palo)
             {
-                // Si los palos son iguales pero el valor es menor
-                // Se intercambian las cartas
-                intercambiarCartas(&cartas[j], &cartas[j + 1]);
-            }
-            else if (cartas[j].palo == cartas[j + 1].palo && cartas[j].valor < cartas[j + 1].valor)
-            // Si los palos son iguales y el valor es mayor que el valor de la carta en la posición j+1
-            // Se intercambian las cartas
-            {
-                intercambiarCartas(&cartas[j], &cartas[j + 1]);
-            }
 
+                intercambiarCartas(&cartas[j], &cartas[j + 1]);
+            }
+            else if (cartas[j].palo == cartas[j + 1].palo && cartas[j].valor > cartas[j + 1].valor)
             {
-                // Si el palo de la carta en la posición j es mayor que el palo de la carta en la posición j+1
-                // O si los palos son iguales pero el valor es mayor
-                // Se intercambian las cartas
+
                 intercambiarCartas(&cartas[j], &cartas[j + 1]);
             }
         }
